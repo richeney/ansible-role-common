@@ -15,7 +15,7 @@ Add to requirements.yml, e.g.:
 
 Then run the following command to install:
 
-`sudo ansible-playbook install --role-file requirements.yml --roles-path=/etc/ansible/roles`
+`sudo ansible-galaxy install --role-file requirements.yml --roles-path=/etc/ansible/roles`
 
 ## Example Playbook
 
