@@ -1,0 +1,25 @@
+---
+# Baseline configuration
+
+- name: Install base packages
+  apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+      - aptitude
+      - git
+      - jq
+      - tree
+      - stress
+      - wget
+      - lolcat
+  when: ansible_os_family == 'Debian'
+
+- name: Update all packages
+  apt:
+    upgrade: dist
+  when: ansible_os_family == 'Debian'
+
+...

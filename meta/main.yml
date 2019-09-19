@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  role_name: common
+  author: richeney
+  description: This role installs baseline packages for Ubuntu VMs.
+  company: "None"
+  license: "MIT"
+  min_ansible_version: 2.4
+  platforms:
+  - name: Ubuntu
+    versions:
+      - xenial
+      - bionic
+  galaxy_tags:
+    - cloud
+    - microsoft
+
+dependencies: []
+
+...
